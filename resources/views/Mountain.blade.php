@@ -27,7 +27,7 @@
 	<div class="seeAll displayNone">
 		<?php 
 			$template2 = '';
-			$a = '<div><a href="/groupproject/Trails/' . $mountain->mountain_id . '/';
+			$a = '<div><a href="/hikingtrailz/Trails/' . $mountain->mountain_id . '/';
 			$i = 1;
 			$q = 0;
 			foreach ($trail->getArray() as $trails) {

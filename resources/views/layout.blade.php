@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="hero">
-		<div class="photo" style="background-image: url(<?php if (isset($imageURL)) { echo "/groupproject/$imageURL";} else { echo '/groupproject/css/images/Sup2HDR.jpg';} ?>)">
+		<div class="photo" style="background-image: url(<?php if (isset($imageURL)) { echo "/hikingtrailz/$imageURL";} else { echo '/hikingtrailz/css/images/Sup2HDR.jpg';} ?>)">
 			<header>
 				<nav>
 					<span class="logo">
@@ -33,11 +33,11 @@
 					</div>
 					<span class="user-options">
 						@if(Auth::guest())
-						<a href="/groupproject/auth/register" title="Signup"><i class="fa fa-user-plus scale"></i></a>
-						<a href="/groupproject/auth/login" title="Login"><i class="fa fa-sign-in scale"></i></a>
+						<a href="/hikingtrailz/auth/register" title="Signup"><i class="fa fa-user-plus scale"></i></a>
+						<a href="/hikingtrailz/auth/login" title="Login"><i class="fa fa-sign-in scale"></i></a>
 						@else
-						<a href="/groupproject/profile" title="Edit Profile"><i class="fa fa-cogs scale"> </i></a>
-						<a href="{{ url('/groupproject/auth/logout') }}" title="Logout"><i class="fa fa-external-link scale"></i></a>
+						<a href="/hikingtrailz/profile" title="Edit Profile"><i class="fa fa-cogs scale"> </i></a>
+						<a href="{{ url('/hikingtrailz/auth/logout') }}" title="Logout"><i class="fa fa-external-link scale"></i></a>
 						@endif
 					</span>
 				</nav>
@@ -67,11 +67,11 @@
 
 	<footer>
 		<span class="logo-footer">
-			<a href="/groupproject/">Hiking Trailz</a>
+			<a href="/hikingtrailz/">Hiking Trailz</a>
 		</span>
 		<span class="about">
-			<h2><a href="/groupproject/about">About Us</a> | 
-			<a href="/groupproject/faq">FAQ</a></h2>
+			<h2><a href="/hikingtrailz/about">About Us</a> | 
+			<a href="/hikingtrailz/faq">FAQ</a></h2>
 		</span>
 		<span class="social-logos">
 			<a href="https://instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>

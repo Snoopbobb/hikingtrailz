@@ -50,27 +50,27 @@ $(document).ready(function() {
 	//================================================================
 
 	$('.options.browse').on('click', function() {
-		if (top.location.pathname === '/groupproject/') {
+		if (top.location.pathname === '/hikingtrailz/') {
 			$("html, body").animate({ scrollTop: 715 }, "slow");
 		} else {
-			window.location.href = "/groupproject/";
+			window.location.href = "/hikingtrailz/";
 		}
 	});
 	$('.options.suggest').on('click', function() {
-		window.location.href = "/groupproject/suggest";
+		window.location.href = "/hikingtrailz/suggest";
 	});
 
 	$('.options.randomtrail').on('click', function(){
 		var trail = Math.floor(Math.random() * 12) + 1;
 
-		window.location.href = '/groupproject/randomTrail/' + trail;
+		window.location.href = '/hikingtrailz/randomTrail/' + trail;
 	});
 
 	//================================================================
 	// Featured
 	//================================================================
 
-	$.get('/groupproject/weather', {}, function (data) {
+	$.get('/hikingtrailz/weather', {}, function (data) {
 		// $('.fweather').text(data.temperature);
 		$('.fweather').html(data.temperature + '&deg; ' + data.clouds);
 	})
@@ -96,7 +96,7 @@ $(document).ready(function() {
 		}
 
 		$.get('/featureImage', sendData, function (data) {
-			$('.photo').css('background-image', 'url(/groupproject/' + data.imageURL + ')');
+			$('.photo').css('background-image', 'url(/hikingtrailz/' + data.imageURL + ')');
 		})
 
 		//replace header
@@ -222,7 +222,7 @@ $(document).ready(function() {
 		$.get('/search', sendMessage, function(data){
 			console.log(data);
 			for (var i = 0; i < data.length; i++) {
-				var tmplt = '<div><a href="/groupproject/Trails/' + data[i].mountain_id + '/' + data[i].trail_id + '">' + (i+1) + '- ' + data[i].name + '</a></div>';
+				var tmplt = '<div><a href="/hikingtrailz/Trails/' + data[i].mountain_id + '/' + data[i].trail_id + '">' + (i+1) + '- ' + data[i].name + '</a></div>';
 				$('.results').append(tmplt);
 			};
 		})

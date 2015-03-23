@@ -39,12 +39,12 @@ class MountainController extends Controller {
 			}
 
 			$template = '';
-			$a = '<a href="/groupproject/Trails/'. $mountain_id . '/';
+			$a = '<a href="/hikingtrailz/Trails/'. $mountain_id . '/';
 			$b = '"><div class="scale trail_tile_';
 			$i = 1;
 			$q = 0;
 			foreach ($trails->getArray() as $trail) {
-				$template .= $a . $trail->trail_id . $b . $i . '" style="background-image: url(/groupproject/' . $tileImageURL[$q] . '); background-size: 150% 100%; color: #ddd; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);"><h3>' . $trail->name . '</h3></div></a>';
+				$template .= $a . $trail->trail_id . $b . $i . '" style="background-image: url(/hikingtrailz/' . $tileImageURL[$q] . '); background-size: 150% 100%; color: #ddd; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);"><h3>' . $trail->name . '</h3></div></a>';
 				$i++;
 				$q++;
 			}
