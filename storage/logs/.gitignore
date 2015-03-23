@@ -1,0 +1,5 @@
+*
+!.gitignore
+
+[Thu Mar 19 15:10:47 2015] [error] [client 174.26.8.168] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'The stream or file "/var/www/30andb/GroupProject/GroupProject/storage/logs/laravel-2015-03-19.log" could not be opened: failed to open stream: Permission denied' in /var/www/30andb/GroupProject/GroupProject/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:84\nStack trace:\n#0 /var/www/30andb/GroupProject/GroupProject/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php(88): Monolog\\Handler\\StreamHandler->write(Array)\n#1 /var/www/30andb/GroupProject/GroupProject/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolo$
+
