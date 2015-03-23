@@ -26,7 +26,7 @@ return [
 	|
 	*/
 
-	'url' => 'http://30andb.com/groupproject',
+	'url' => 'http://30andb.com/hikingtrailz',
 
 	/*
 	|--------------------------------------------------------------------------
