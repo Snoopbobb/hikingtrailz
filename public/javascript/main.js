@@ -95,7 +95,7 @@ $(document).ready(function() {
 			mountain_id: $(this).find('input').val()
 		}
 
-		$.get('/featureImage', sendData, function (data) {
+		$.get('hikingtrailz/featureImage', sendData, function (data) {
 			$('.photo').css('background-image', 'url(/hikingtrailz/' + data.imageURL + ')');
 		})
 
@@ -176,7 +176,7 @@ $(document).ready(function() {
 		}
 		
 
-		$.get('/addComment', senddata, function (data){
+		$.get('hikingtrailz/addComment', senddata, function (data){
 			
 				var output = renderComment(data.comment);
 				//console.log(data.comment.created_at);
@@ -202,7 +202,7 @@ $(document).ready(function() {
 		$(this).parents('.comment-block').remove();
 		console.log(senddata);
 
-		$.get('/deleteComment', senddata, function (data){
+		$.get('hikingtrailz/deleteComment', senddata, function (data){
 
 		})
 		
@@ -219,7 +219,7 @@ $(document).ready(function() {
 			message: $('.search input').val()
 
 		}
-		$.get('/search', sendMessage, function(data){
+		$.get('hikingtrailz/search', sendMessage, function(data){
 			console.log(data);
 			for (var i = 0; i < data.length; i++) {
 				var tmplt = '<div><a href="/hikingtrailz/Trails/' + data[i].mountain_id + '/' + data[i].trail_id + '">' + (i+1) + '- ' + data[i].name + '</a></div>';
