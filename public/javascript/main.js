@@ -70,7 +70,7 @@ $(document).ready(function() {
 	// Featured
 	//================================================================
 
-	$.get('/hikingtrailz/weather', {}, function (data) {
+	$.get('weather', {}, function (data) {
 		// $('.fweather').text(data.temperature);
 		$('.fweather').html(data.temperature + '&deg; ' + data.clouds);
 	})
