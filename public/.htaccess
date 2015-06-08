@@ -4,7 +4,7 @@
     <IfModule mod_negotiation.c>
         Options -MultiViews
     </IfModule>
-
+    RewriteBase /hikingtrailz
     RewriteEngine On
 
     # Redirect Trailing Slashes...
