@@ -1,7 +1,5 @@
 <?php namespace App\Http\Controllers;
-use DB;
-use App\Models\Search;
-use Request;
+i
 
 
 class SearchController extends Controller {
