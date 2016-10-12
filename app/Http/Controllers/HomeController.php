@@ -12,8 +12,13 @@ class HomeController extends Controller {
 	{	
 		// call weather function
 		$weather = Controller::getWeather();
+
+		if ($weather) {
+			return view('home')->with($weather);
+		} else {
+			return view('home');
+		}
 		
-		return view('home')->with($weather);
 	}
 
 	public function getImage() {

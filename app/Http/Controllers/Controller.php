@@ -14,7 +14,7 @@ abstract class Controller extends BaseController {
 		// $json = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=Seattle');
 
 
-		$URL = "http://api.openweathermap.org/data/2.5/weather?q=Phoenix";
+		$URL = "http://api.openweathermap.org/data/2.5/weather?q=Phoenix&APPID=f5deacc168790856949229ab95c20ddc";
 		$Context = stream_context_create(array(
 				'http' => array(
     				'method' => 'GET',
