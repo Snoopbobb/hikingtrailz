@@ -8,7 +8,7 @@
 
 @section('main_content')
 <div class="about-page-wrapper">
-	<h2></h2>
+	<h2>This is a test to see if this works</h2>
 	<div class="about-wrapper">
 		<div class="about-pic">
 			<div>
