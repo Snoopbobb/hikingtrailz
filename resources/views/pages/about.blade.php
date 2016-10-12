@@ -38,7 +38,7 @@
 	<div class="about-wrapper">
 		<div class="about-pic">
 		<div>
-			<img src="css/images/scott3.jpg">
+			<img src="css/images/scott1.jpg">
 		</div>
 		<a href="https://www.linkedin.com/profile/view?trk=contacts-contacts-list-contact_name-0&id=403636118"><i class="fa fa-linkedin-square fa-2x"></i></a>
 		<a href="mailto:scottkessinger@hotmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
