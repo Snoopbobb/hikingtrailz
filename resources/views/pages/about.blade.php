@@ -8,7 +8,7 @@
 
 @section('main_content')
 <div class="about-page-wrapper">
-	<h2>This is a test to see if this works</h2>
+	<h2></h2>
 	<div class="about-wrapper">
 		<div class="about-pic">
 			<div>
@@ -38,7 +38,7 @@
 	<div class="about-wrapper">
 		<div class="about-pic">
 		<div>
-			<img src="css/images/scott.jpg">
+			<img src="css/images/scott-hello.jpg">
 		</div>
 		<a href="https://www.linkedin.com/profile/view?trk=contacts-contacts-list-contact_name-0&id=403636118"><i class="fa fa-linkedin-square fa-2x"></i></a>
 		<a href="mailto:scottkessinger@hotmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
