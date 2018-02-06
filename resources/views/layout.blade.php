@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HikingTrailz</title>
-	<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
-	<link href='http://fonts.googleapis.com/css?family=Rock+Salt|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{{ URL::asset('css/styles.css') }}">
-	<link rel="stylesheet" href="{{ URL::asset('fonts/font-awesome/css/font-awesome.min.css') }}">
-	<link rel="stylesheet" href="{{ URL::asset('fonts/weather-icons/css/weather-icons.min.css') }}">
+	<link rel="stylesheet" href="//necolas.github.io/normalize.css/3.0.2/normalize.css">
+	<link href='//fonts.googleapis.com/css?family=Rock+Salt|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ URL::asset('hikingtrailz/css/styles.css') }}">
+	<link rel="stylesheet" href="{{ URL::asset('hikingtrailz/fonts/font-awesome/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ URL::asset('hikingtrailz/fonts/weather-icons/css/weather-icons.min.css') }}">
 </head>
 <body>
 	<div class="hero">
@@ -15,14 +15,14 @@
 			<header>
 				<nav>
 					<span class="logo">
-						<a href="{{ url('/') }}">Hiking Trailz</a>
+						<a href="{{ url('/hikingtrailz/') }}">Hiking Trailz</a>
 					</span>
 					<div>
 						<div class="options browse">
 							<div>Browse All</div>
 							<div>See All The Mountains</div>
 						</div>
-						<a href="{{ url('/suggest') }}"><div class="options suggest">
+						<a href="{{ url('hikingtrailz/suggest') }}"><div class="options suggest">
 							<div>Suggest A Trail</div>
 							<div>Send Us What You Wanna See</div>
 						</div></a>
@@ -74,16 +74,16 @@
 			<a href="/hikingtrailz/faq">FAQ</a></h2>
 		</span>
 		<span class="social-logos">
-			<a href="https://instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
-			<a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-3x"></i></a>
-			<a href="https://twitter.com/"><i class="fa fa-twitter fa-3x"></i></a>
+			<a href="//instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
+			<a href="//www.facebook.com/"><i class="fa fa-facebook-official fa-3x"></i></a>
+			<a href="//twitter.com/"><i class="fa fa-twitter fa-3x"></i></a>
 		</span>
 	</footer>
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-	<script type="text/javascript" src="{{ URL::asset('javascript/instafeed.min.js') }}"></script>
-	<script type="text/javascript" src="{{ URL::asset('javascript/jquery.simplyscroll.min.js') }}"></script>
-	<script src="{{ URL::asset('javascript/main.js') }}"></script>
-	<script src="{{ URL::asset('/masonry.pkgd.js') }}"></script>
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script type="text/javascript" src="{{ URL::asset('hikingtrailz/javascript/instafeed.min.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('hikingtrailz/javascript/jquery.simplyscroll.min.js') }}"></script>
+	<script src="{{ URL::asset('hikingtrailz/javascript/main.js') }}"></script>
+	<script src="{{ URL::asset('hikingtrailz//masonry.pkgd.js') }}"></script>
 </body>
 </html>
